@@ -100,5 +100,23 @@ $(document).ready(function() {
         }
     }
 });
-
 });
+
+
+//function chang values
+function ChangVal(data) {
+    var rb1000 = b1000.value;
+    var rb500 = b500.value;
+    var rb100 = b100.value; 
+    if(rb1000 ==null || rb500 ==null  || rb100 ==null ){
+        document.getElementById("b1000").className ="form-control required";
+        // rb1000.class = "form-control required";
+    }else{
+    var Result = parseInt(rb1000)+parseInt(rb500) +parseInt(rb100);
+    bAll.value =   Result;
+    }
+    // fieldname.value = data;
+    // fieldname.value = data;  
+    // document.getElementById("test").value = data;
+   
+  }

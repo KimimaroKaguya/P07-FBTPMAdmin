@@ -196,10 +196,10 @@
                     </div>
                     <div class="clearfix"></div>
                 </li>
-                <li><a href="kimimaro.html"><i class="fa fa-tachometer fa-fw">
+                <li><a href="Kimimaro.html"><i class="fa fa-tachometer fa-fw">
                     <div class="icon-bg bg-orange"></div>
                 </i><span class="menu-title">Profile</span></a></li> 
-                <li class="active"><a href="kimimaro-ATM.html"><i class="fa fa-tachometer fa-fw">
+                <li class="active"><a href="Kimimaro-ATM.html"><i class="fa fa-tachometer fa-fw">
                     <div class="icon-bg bg-orange"></div>
                 </i><span class="menu-title">ATM Tutorial</span></a></li>            
             </ul>
@@ -288,6 +288,56 @@
                             <div class="panel panel-blue">
                                 <div class="panel-heading">ถอนเงิน ATM</div>
                                 <div class="panel-body">
+                                    <!-- <div class="row"> -->   
+                                    <from class="form-validate-signin">                                
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <div class="form-group"><label for="inputb1000" class="control-label required">จำนวนแบงค์ 1,000</label>
+                                                    <input id="b1000" onchange="ChangVal(this.value)" type="text" placeholder="" class="form-control required" data-hover="tooltip" title="ATM" />
+                                                </div>
+                                                <!-- <div class="form-group"><label for="" class="control-label">Email</label>
+                                                    <input type="email" name="email" class="form-control required email"/></div> -->
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-group"><label for="inputb500" class="control-label">จำนวนแบงค์ 500</label>
+                                                    <input id="b500" onchange="ChangVal(this.value)" type="text" placeholder="" class="form-control" data-hover="tooltip" title="ATM" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-group"><label for="inputb100" class="control-label">จำนวนแบงค์ 100</label>
+                                                <input id="b100" onchange="ChangVal(this.value)" type="text" placeholder="" class="form-control" data-hover="tooltip" title="ATM" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                    <div class="form-group"><label for="inputb100" class="control-label">รวม</label>
+                                                    <input id="bAll"  type="text" placeholder="" class="form-control" data-hover="tooltip" title="ATM" />
+                                                    </div>
+                                                </div>                                              
+                                        </div>
+                                    </from> 
+                                    <div class="portlet box portlet-green">
+                                            <div class="portlet-header">
+                                                <div class="caption">Sign In Form</div>
+                                                <div class="tools"><i class="fa fa-chevron-up"></i><i data-toggle="modal"
+                                                                                                      data-target="#modal-config"
+                                                                                                      class="fa fa-cog"></i><i
+                                                        class="fa fa-refresh"></i><i class="fa fa-times"></i></div>
+                                            </div>
+                                            <div class="portlet-body">
+                                                <form action="#" class="form-validate-signin">
+                                                    <div class="form-group"><label for="" class="control-label">Email</label><input
+                                                            type="email" name="email" class="form-control required email"/></div>
+                                                    <div class="form-group"><label for="" class="control-label">Password</label><input
+                                                            id="password" type="password" name="password"
+                                                            class="form-control required password"/></div>
+                                                    <button type="submit" class="btn btn-success">Submit</button>
+                                                    &nbsp;
+                                                    <button type="button" class="btn btn-default">Cancel</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    <!-- <div class="row"> -->                                    
+                                    <hr>
                                         <div class="form-group"><label for="inputAmountInATM" class="control-label">จำนวนเงินในตู้ ATM</label>
                                             <input id="AmountInATM" type="text" placeholder="" class="form-control" data-hover="tooltip" title="ATM" />
                                         </div>
@@ -396,6 +446,9 @@
     <script src="vendors/sco.message/sco.message.js"></script>
     <script src="vendors/intro.js/intro.js"></script>
     <script src="js/index.js"></script>    
+    <!--LOADING SCRIPTS FOR PAGE-->
+    <script src="vendors/jquery-validate/jquery.validate.min.js"></script>
+    <script src="js/form-validation.js"></script>
     <script type="text/javascript">(function (i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
         i[r] = i[r] || function () {
